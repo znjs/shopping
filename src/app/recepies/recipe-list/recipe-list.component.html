@@ -1,0 +1,17 @@
+<div><button class="primary-btn">new recipe</button></div>
+<hr />
+<div
+  *ngFor="let item of recipes"
+  class="my-2 mx-1 p-1 rounded-md border-2 border-gray-200"
+>
+  <a href="#" class="flex">
+    <div class="grow">
+      <h4 class="text-lg font-semibold">{{ item.name }}</h4>
+      <p>{{ item.description }}</p>
+    </div>
+    <span>
+      <img [src]="item.imgPath" alt="dish" class="w-[200px]" />
+    </span>
+  </a>
+</div>
+<app-recipe-item></app-recipe-item>

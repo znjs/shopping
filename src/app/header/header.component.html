@@ -1,0 +1,19 @@
+<nav class="flex px-4 py-2 bg-gray-200">
+  <a href="#" class="basis-1/3 text-lg font-semibold">Recipe Book</a>
+  <div class="grow font-medium">
+    <ul class="flex items-center">
+      <li class="mx-2">Recipes</li>
+      <li class="mx-2">Shopping List</li>
+    </ul>
+  </div>
+  <div class="flex items-center">
+    <select
+      class="outline-0 bg-transparent appearance-none indent-px text-clip"
+    >
+      <option class="px-2 py-1" [defaultSelected]="true">Manage</option>
+      <option class="px-2 py-1">fetch</option>
+      <option class="px-2 py-1">update</option>
+    </select>
+    <i class="fa-solid fa-caret-down mx-2"></i>
+  </div>
+</nav>
